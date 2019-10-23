@@ -1,0 +1,47 @@
+{
+    "name": "phalcon/vokuro",
+    "description": "This is a sample application for the Phalcon PHP Framework",
+    "version": "1.2.0",
+    "keywords": [
+        "phalcon",
+        "framework",
+        "sample app",
+        "vokuro"
+    ],
+    "type": "library",
+    "license": "BSD-3",
+    "homepage": "http://www.phalconphp.com",
+    "authors" : [
+        {
+            "name" : "Andres Gutierrez",
+            "email" : "andres@phalconphp.com"
+        },
+        {
+            "name" : "Mark Garrett",
+            "email" : "mark@moderndeveloperllc.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-phalcon": ">=3.0.0",
+        "abraham/twitteroauth": "^0.6.6",
+        "google/apiclient": "^2.0",
+        "swiftmailer/swiftmailer": "^5.4",
+        "phalcon/devtools": "dev-master",
+        "ifsnop/mysqldump-php": "2.*",        
+        "m1ome/phalcon-datatables": "1.*",
+        "nesbot/carbon": "^1.22",
+        "tawba/push-notification": "^1.0",
+        "milon/barcode": "^5.3",
+        "dompdf/dompdf": "^0.8.0",
+        "phpoffice/phpexcel": "^1.8",
+        "mikehaertl/phpwkhtmltopdf": "^2.2",
+        "ktamas77/firebase-php": "dev-master",
+        "superbalist/flysystem-google-storage": "^5.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "spipu/html2pdf": "^5.0",
+        "twilio/sdk": "^5.16",
+        "mpdf/mpdf": "^7.0"
+    }
+	
+}

@@ -1,0 +1,55 @@
+
+#area-chart,#line-chart,#bar-chart,#stacked,#pie-chart{
+  min-height: 250px;
+}
+
+#bar0-chart,#pie-chart,#pie-chart svg, #bar1-chart, #bar2-chart, #bar3-chart,#bar-h{
+  height: 45vh;
+}
+
+.charts >div{
+padding:1%;
+border:1px inset rgba(0, 0, 0, 0.06);
+}
+
+#stacked.full-width-stacked{
+  min-height: 75vh;
+}
+
+.procedures-col{
+width:133px;
+}
+
+.main-lbl{
+font-size:14px;
+font-weight: bold;
+}
+.ar-text{
+    text-align: right;
+}
+.ar-text div{
+float:right;
+    direction: rtl;
+}
+
+
+h4 label{
+   font-size: 15px !important;
+    display: block !important;
+    text-align: center;
+    width: 100%;
+    white-space: normal !important;
+}
+.row.charts{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row.charts > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+

@@ -1,0 +1,55 @@
+/*** Grid styles***/
+
+.grid__sizer, .grid__item {
+  position: relative;
+  width: 31%;
+  min-width: 16.25rem;
+}
+
+.grid__item {
+  margin-bottom: .9375rem;
+  overflow: hidden;
+}
+
+.grid__item--high, .grid__item--high img {
+  height: 30rem;
+}
+
+
+.card-custom {
+  background: #e9e9e9;
+  border-radius: 5px ;
+}
+
+.card-custom-head {
+  background: #14171c;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.card-custom-head img{
+ width: 20px;
+ display: inline-block;
+}
+
+.card-custom-head span {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card-custom-body {
+padding: 5px 5px 10px 5px;
+border: 1px solid #bfbfbf;
+border-top: 1px;
+border-radius: 0 0 5px 5px ;
+}
+
+.card-custom-body input{
+  width: 100%;
+  padding: 2px 5px;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+}

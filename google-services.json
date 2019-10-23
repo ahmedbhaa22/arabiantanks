@@ -1,0 +1,43 @@
+{
+  "type": "service_account",
+  "project_info": {
+    "project_number": "327357102205",
+    "firebase_url": "https://tabyb-com.firebaseio.com",
+    "project_id": "tabyb-com",
+    "storage_bucket": "tabyb-com.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327357102205:android:4dbf37b00ba2bfa8",
+        "android_client_info": {
+          "package_name": "com.tabyb.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327357102205-kpbj3tj3130giu4l2cqhfn485bd1keq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATLY0pgtDzEWCFrGoQgQkeQsixz_F6Y_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

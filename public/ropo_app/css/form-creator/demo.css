@@ -1,0 +1,60 @@
+
+#fb-template {
+  // display: none;
+}
+
+.template-textarea-wrap {
+  display: block !important;
+}
+
+.content {
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 5em;
+}
+.build-wrap{
+  direction: ltr;
+}
+.form-rendered .build-wrap {
+  display: none;
+}
+
+.render-wrap {
+  display: none;
+}
+
+.form-rendered .render-wrap {
+  display: block;
+}
+
+#edit-form {
+  display: none;
+}
+
+.form-rendered #edit-form {
+  display: block;
+}
+
+.frmb-control li{
+  direction: ltr;
+  width: 100%;
+}
+.cb-wrap{
+  padding: 8px;
+  background: #ccc;
+}
+
+.stage-wrap {
+    background: #f0f0f0;
+    padding: 8px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    margin: 0px 10px 0 10px;
+    position: static;
+}
+
+.frmb .field-actions .btn {
+    padding: 0 20px;
+  }

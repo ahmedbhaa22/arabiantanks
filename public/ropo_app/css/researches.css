@@ -1,0 +1,41 @@
+.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+    float: right;
+}
+.wizard > .steps > ul > li {
+    width: auto;
+}
+.wizard > .steps .number {
+    display: none;
+}
+.wizard > .content {
+    background: #fff;
+    border: 1px solid #eee;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display:block;
+	min-height:63vh;
+	overflow-y: auto;
+	position:relative
+}
+.wizard > .content > .body {
+	top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.rgt-bordered{
+      border-right: 1px solid #eee;
+}
+legend{
+	background: #eee;
+    padding: 20px;
+}
+.funkyradio input[type="radio"]:empty, .funkyradio input[type="checkbox"]:empty{
+	display:none !important;
+}
+@media (max-width: 480px) {
+	.wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active{
+		padding: 10px 6px;
+		margin: 0px 5px;
+	}
+}

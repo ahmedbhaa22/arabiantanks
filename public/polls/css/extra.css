@@ -1,0 +1,223 @@
+
+.morris-hover.morris-default-style .morris-hover-point, .select2-container--bootstrap .select2-results__group, .select2-container--bootstrap .select2-selection{
+	font-family: 'Helvetica Neue W23 for SKY Reg' !important;
+	font-size: 9px
+}
+.page-content-wrapper .page-content{
+	    padding: 10px 20px 0px !important;
+}
+
+.logo{
+	height: 40px;
+}
+.logo img{
+	height: 100%;
+}
+
+.red{color: #9e0909 !important; }
+.blue{color: #337ab7 !important;}
+
+.space-top{
+
+	margin-top: 0.1%;
+}
+.dashedForm .col-xs-6, .dashedForm .col-xs-3 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.dashedForm, .dashedForm label{  font-size: 10px!important; }
+
+
+.dashedForm * select, .dashedForm * input[type="text"], 
+.dashedForm * input[type="number"], .dashedForm * input[type="password"], .dashedForm * input[type="date"],
+.dashedForm * input[type="time"], .dashedForm * textarea {
+    padding: 0;
+    border-bottom: 1px dashed #cccccc !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important;
+    margin: 0px !important;
+    color: #126ed8 !important;
+    font-size: 10px;
+		height: 20px;
+}
+.dashedForm * textarea {
+    padding: 0;
+    border: 1px dashed #cccccc !important;
+    border-radius: 0 !important;
+    margin: 0px !important;
+    color: #126ed8 !important;
+    font-size: 10px;
+    height: 20px;
+}
+.dashedForm .row.space-top select {
+    height: 18px !important;
+    }
+
+
+
+.header-inputs input{
+	border: none !important;
+  border-bottom: solid 2px #c9c9c9 !important;
+  transition: border 0.3s;
+  padding: 3px !important;
+  width: 60px !important;
+  text-align: center !important;
+  background: #eee;
+  padding: 0;
+  margin: 0;
+  height: 10px;
+}
+
+.line {margin-bottom: 5px;
+}
+.eng, .eng *{
+	direction: ltr !important;
+	text-align: left !important;
+}
+.panel .col-md-12{
+	padding:0 !important;
+}
+.panel {
+    margin: 5px !important;
+}
+.panel .panel-body{
+	padding:3px 4px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{
+
+	padding-right: 8px;
+    padding-left: 0px;
+}
+
+.dashedForm .select2-container--bootstrap .select2-selection {
+    line-height: 15px !important;
+    text-align: right !important;
+    border-radius: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 1px dashed #c2cad8 !important;
+    height: 20px !important;
+    margin-top: -3px !important;
+}
+input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;     /* not currently supported */
+    -o-appearance: checkbox;      /* not currently supported */
+}
+.checkbox, .radio{
+	margin:0 !important;
+}
+/*.radio .col-md-5, .radio .col-md-2, .radio .col-md-6, .radio .col-md-q,
+.checkbox .col-md-5, .checkbox .col-md-2, .checkbox .col-md-6, .checkbox .col-md-q{
+	padding:0 !important;
+}*/
+/*.radio .col-md-4, .checkbox .col-md-4{
+	padding-left: 0;
+}*/
+.checkbox label, .radio label{
+	padding-right: 0;
+}
+.dashedForm .row.space-top input.radio-button{
+	margin: 0px;
+	padding: 10px;
+}
+/***************************************/
+
+.notes{
+	width: 100%;
+	height: 30px;
+	border: 1px dashed #cccccc !important;
+	margin-top: 5px;
+}
+
+.ui-datepicker{
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+table, .ui-datepicker-calendar td, .ui-datepicker-calendar th{
+	border: 0 !important;
+}
+input[type='submit'].waves-button-input, input[type='button'].waves-button-input {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  background: #6eb0ff !important;
+  height: auto !important;
+  text-decoration: none !important;
+  float: right !important;
+  width:100%;
+  padding:5px 0;
+  margin-bottom:10px !important;
+  border:none !important;
+  margin-top: 5px;
+}
+input[type='submit'].waves-button-input:focus , input[type='button'].waves-button-input:focus,
+input[type='submit'].waves-button-input:hover , input[type='button'].waves-button-input:hover{
+  color: #000 !important;
+  outline-color: #eee;
+}
+
+input[type='submit'].waves-button-input:hover {
+  background: #03a874;
+  text-decoration: none;
+}
+.xdsoft_monthselect, .xdsoft_yearselect{
+
+	display: none !important;
+}
+
+
+.red{
+    color:#9e0909 !important;
+}
+.blue{
+  color:#5ca2f5 !important;
+}
+
+#new_order_form * .help-block {
+    position: absolute;
+     margin-top: 0px;
+     margin-bottom: 0px;
+    z-index: 999;
+		top: 0;
+}
+.radio .help-block, .checkbox .help-block, .col-md-1 .help-block{
+	width: 200px;
+	top: -22px !important;
+}
+@media print{
+	.panel .panel-body{
+		padding:1px 4px;
+	}
+	.dashedForm * select,.dashedForm * input[type="text"],.dashedForm * input[type="number"],
+	.dashedForm * input[type="password"] {
+			height: 16px;
+	}
+	
+	.space-top {
+	    margin-top: 0%;
+	}
+	.logo {
+    height: auto;
+	}
+	.dashedForm, .dashedForm label {
+	    font-size: 9px!important;
+	}
+
+	.dashedForm * select,.dashedForm * input[type="text"],.dashedForm * input[type="number"],
+	.dashedForm * input[type="password"]  {
+	    color: #ccc !important;
+	    font-size: 9px;
+			height: 16px;
+	}
+
+}

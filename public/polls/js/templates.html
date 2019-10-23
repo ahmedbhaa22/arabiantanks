@@ -1,0 +1,54 @@
+<script id="questions-template" type="text/x-handlebars-template">
+
+	<div class="row gap" id="repeatTHISQ">
+	    <div class="col-xs-12">
+	        <!-- <legend>السؤال رقم 2</legend> -->
+	        <div class="col-xs-12 no-padding">
+	            <textarea class="form-control" name="questions[{{questions}}][text]" placeholder="أكتب السؤال"></textarea>
+	        </div>
+
+	        <div class="gap">
+	            <div class="">
+	                <div class="col-sm-12 no-padding answer-tpl" id="repeatTHISA">
+	                    <div class="col-md-10 col-sm-8 col-xs-7 nopadding-r funkyradio">
+	                        <div class="funkyradio-primary">
+	                            <input type="radio" name="radio">
+	                            <label><input type="text" class="form-control no-margin" name="questions[{{questions}}][answers][0][text]" placeholder="أكتب إجابة"></label>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-2 col-sm-4 col-xs-5 no-padding">
+	                        <button class="btn-danger" type="button" onclick="removeAnswer(this)">
+	                            <i class="fa fa-times" aria-hidden="true"></i>
+	                        </button>
+	                    </div>
+	                </div>
+
+	                <div class="answers_div">
+
+	                </div>
+
+	            </div>
+
+	            <button class="btn btn-xs btn-primary" type="button" onclick="newAnswer(this, {{questions}})">
+	                <i class="fa fa-plus-circle" aria-hidden="true"></i>  أضف إجابة
+	            </button>
+	        </div>
+	    </div>
+	</div>
+</script>
+
+<script id="answers-template" type="text/x-handlebars-template">
+	<div class="col-sm-12 no-padding answer-tpl" id="repeatTHISA">
+        <div class="col-md-10 col-sm-8 col-xs-7 nopadding-r funkyradio">
+            <div class="funkyradio-primary">
+                <input type="radio" name="radio">
+                <label><input type="text" class="form-control no-margin" name="questions[{{question}}][answers][{{answers}}][text]" placeholder="أكتب إجابة" required></label>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-5 no-padding">
+            <button class="btn-danger" type="button" onclick="removeAnswer(this)">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bootstrap Admin App + jQuery">
+    <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+    <title>Tanks | Maintenance</title>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"  type="text/css"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-switch-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="css/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="css/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/datatables/datatables.bootstrap-rtl.css" rel="stylesheet" type="text/css" />
+    <link href="css/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <link href="css/todo-2.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN THiE GLOBAL STYLES -->
+    <link href="css/components-md-rtl.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="css/plugins-md-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THiE GLOBAL STYLES -->
+
+    <!-- BEGIN THiE LAYOUT STYLES -->
+    <link href="css/layout-rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom-pentavalue.css" rel="stylesheet" type="text/css" />
+    <!-- END THiE LAYOUT STYLES -->
+
+    <!----BEGIN color-- schie------>
+    <link href="css/schemes/scheme_1.css" rel="stylesheet" type="text/css" />
+    <!----END color schie-->
+
+    <link rel="stylesheet" href="css/my_custom.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="thie-color" content="#ffffff">
+
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md page-sidebar-closed page-container-bg-solid">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html">
+                        <img src="img/logo.png" alt="logo" height="25" class="logo-default"/>
+                    </a>
+
+                <div class="menu-toggler sidebar-toggler">
+                    <span></span>
+                </div>
+            </div>
+            <!-- END LOGO -->
+
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-extended dropdown-notification " id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-bell"></i>
+                                <span class="badge badge-default"> 16</span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li class="external">
+                                <h3>16 إشعار قيد الانتظار </h3>
+                            </li>
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="height: 330px;" data-handle-color="#637283">
+                                    <li>
+                                        <a href="clients-content.html">
+                                                <span class="time">منذ ساعة</span>
+                                                <span class="details"> تم تسجيل عميل من الموقع </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="order.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> وصول 3 طلبات شراء </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="order.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم اضافة طلب ارجاع </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="_notification_offer_new.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم اضافة عرض جديد </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="_notification_offer_agreemant.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم الموافقة على العرض المقدم </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="_notification_discount_new.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم اضافة خصم جديد </span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="_notification_discount_agreement.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم الموافقة على الخصم المقدم </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="_notification_order_delivery.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> تم تسليم طلب شراء </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="_notification_client_report.html">
+                                                <span class="time">منذ 90 دقيقة </span>
+                                                <span class="details"> تم اضافة عدد 5 من العملاء من خلال المندوب محمد احمد </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="sales-internal.html">
+                                                <span class="time">منذ 90 دقيقة </span>
+                                                <span class="details"> تم اضافة عدد 5 من تقارير المبيعات الداخلية </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="maintenance-content.html">
+                                                <span class="time">الآن </span>
+                                                <span class="details"> لديك 3 طلبات صيانة </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ticket-view-assigned.html">
+                                                <span class="time">منذ 90 دقيقة </span>
+                                                <span class="details"> تم تحديد طلب صيانة لك </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ticket-view-under.html">
+                                                <span class="time">منذ 90 دقيقة </span>
+                                                <span class="details"> تم اضافة تقرير فني لطلب صيانة </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="_notification_order-exchange.html">
+                                                <span class="time">منذ 30 دقيقة</span>
+                                                <span class="details"> تم تقديم طلب استبدال </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ticket-view-exchange.html">
+                                                <span class="time">منذ 30 دقيقة</span>
+                                                <span class="details"> تم الموافقة / رفض طلب الاستبدال </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="tticket-view-closed.html">
+                                                <span class="time">منذ 30 دقيقة</span>
+                                                <span class="details"> تم غلق طلب الصيانة </span>
+                                        </a>
+                                    </li>
+                                    
+<!--
+                                    <li>
+                                        <a href="_notification_money_transfer.html">
+                                                <span class="time">منذ 30 دقيقة</span>
+                                                <span class="details"> تم إستلام حوالة بنكية من عميل  </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="_notification_visit_reminder.html">
+                                                <span class="time">17-11-2011</span>
+                                                <span class="details">  زيارة للعميل محمد احمد</span>
+                                        </a>
+                                    </li>
+-->
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END NOTIFICATION DROPDOWN -->
+
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+                    <li class="dropdown dropdown-user">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <img alt="" class="img-circle" src="img/default-avatar.jpg">
+                        <span class="username username-hide-on-mobile"> مرحباً : أدمن </span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-default">
+                        <li>
+                            <a href="_profile.html">
+                                <i class="icon-user"></i> صفحتى الشخصية </a>
+                        </li>
+
+                        <li>
+                            <a href="_employee_profile_all.html">
+                                <i class="icon-users"></i> موظفين الشركة </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a href="_settings.html">
+                                <i class="icon-settings"></i> لوحة التحكم </a>
+                        </li>
+
+                        <li>
+                            <a href="_login.html">
+                                <i class="icon-key"></i> تسجيل الخروج </a>
+                        </li>
+                    </ul>
+                </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                    <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+
+                    <!-- END QUICK SIDEBAR TOGGLER -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"></div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+
+
+    <!-- Main section-->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- BEGIN SIDEBAR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-closed " data-keep-expanded="false" data-auto-scroll="true"
+                    data-slide-speed="200" style="padding-top: 20px  ; ">
+                    <!-- DOC: To riove the sidebar toggler from the sidebar you just need to completely riove the below "sidebar-toggler-wrapper" LI elient -->
+                    <!-- Iterates over all sidebar itis-->
+                    <li class="">
+                        <a href="index.html" title="/index">
+                              <i class="fa fa-home" aria-hidden="true"></i>
+                              <span data-localize="sidebar.nav.Index">الصفحة الرئيسية</span>
+                           </a>
+                    </li>
+                    <li class="">
+                        <a href="clients.html" title="Clients">
+                              <i class="fa fa-users" aria-hidden="true"></i>
+                              <span data-localize="sidebar.nav.Clients">العملاء</span>
+                           </a>
+                    </li>
+                    <li class="">
+                        <a href="production.html" title="Sales">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              <span data-localize="sidebar.nav.Sales"> المنتجات</span>
+                           </a>
+                    </li>
+                    <li class="active">
+                        <a href="maintenance.html" title="Maintenence">
+                                <i class="fa fa-wrench" aria-hidden="true"></i>
+                                <span data-localize="sidebar.nav.Reports">الصيانة </span>
+                            </a>
+                    </li>
+                    <li class="">
+                            <a href="polls.html" title="Polls">
+                                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                                    <span data-localize="sidebar.nav.polls">الإستبيان </span>
+                                </a>
+                        </li>
+
+                </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- Page content-->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="page-bar " style="position: relative">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <a href="index.html"><span> الرئيسية </span></a>
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <a href="maintenance.html"><span> الصيانة </span></a>
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <span>محتوى</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-12 col-xs-12 hidden-xs">
+                            <div class="" style="width: 100%; min-height: 180px; overflow: hidden ; background: url('img/banners/banner-maint.png') center center no-repeat ; background-size: contain"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet light clearfix">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="fa fa-times font-dark"></i>
+                            <span class="caption-subject bold uppercase">عرض مشكلة صيانة  </span>
+                        </div>
+                        <div class="actions">
+                          <a type="button" href="" class="btn btn-xs btn-danger">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i> حذف المشكلة
+                          </a>
+                      </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="row space">
+                             <div class="col-md-8">
+                                 <table class="table">
+                                    <tr>
+                                        <td>تصنيف المنتج</td>
+                                        <td>خزان</td>
+                                    </tr>
+                                    <tr>
+                                        <td>نوع المنتج</td>
+                                        <td>خزان عامودي</td>
+                                    </tr>
+                                    <tr>
+                                        <td>سعة الخزان</td>
+                                        <td>300 لتر </td>
+                                    </tr>
+                                </table>
+                                 
+                                 <div class="panel panel-info">
+                                     <div class="panel-heading">
+                                        <div class="panel-title">مشاكل المنتج</div>
+                                     </div>
+                                      <div class="panel-body">
+                                         <!-- START list group-->
+                                         <!-- <div data-height="180" data-scrollable="" class="list-group"> -->
+                                         <div class="scroller" style="height: 410px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                                            <div class="todo-tasklist">
+                                                <div class="todo-tasklist-item">
+                                                  
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">1</span>
+                                                      تسريب في نبل نحاس ١ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">2</span>
+                                                      تسريب في نبل نحاس ٢ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                              
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                                <div class="todo-tasklist-item">
+                                                  <div class="todo-tasklist-item-title">
+                                                      رقم 
+                                                      <span class="label label-primary">3</span>
+                                                        تسريب في نبل نحاس ٣ بوصه داخلي 
+                                                  </div>
+                                                </div>
+                                          </div>
+                                         </div>
+                                         <!-- END list group-->
+                                          
+                                        </div>
+                                     
+                                     <div class="col-xs-12 gap divider">
+                                                <h4> إضافة مشكلة جديدة في هذا المنتج</h4>
+                                            </div>
+                                          <div class="form-group col-md-12 no-padding">
+                                            <div class="col-xs-10 form-group no-padding" id="repeatTHIS">
+                                                <div class="col-xs-4 form-group" >
+                                                    <label class="control-label">رقم مكان الشكلة على الصورة</label>
+                                                    <input type="number" min="1" class="form-control">
+                                                </div>
+                                                <div class="col-xs-8 form-group" >
+                                                    <label class="control-label"> إسم المشكلة </label>
+                                                    <input type="text"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 gap">
+                                                <button class="btn btn-xs btn-info" onclick="repeat()">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i> اضافة المزيد</button>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-4 bordered">
+                                <div class="row">
+                                    <img src="img/tank.png" class="img-responsive" />
+                                </div>
+                                <div class="row" >
+                                    <label class="control-label"> تحديث صورة المنتج </label>
+                                    <input type="file"  class="form-control">
+                                </div>
+                            </div> 
+                            
+                            <div class="col-xs-12">
+                                <button class="btn btn-success btn-md">
+                                    <i class="fa fa-save" aria-hidden="true"></i>
+                                     حفظ
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN DASHBOARD STATS 1-->
+
+            <div class="clearfix"></div>
+            <!-- END DASHBOARD STATS 1-->
+
+        </div>
+    <div class="page-footer text-center">
+        <div class="page-footer-inner text-center"> 2016 &copy; Tanks
+            <img src="img/logo_small.png " width="40">
+            <a href="" title="itcore" target="_blank">IT Core</a>
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    
+    
+    
+<script type="text/javascript">
+    var i = 0;
+    var original = document.getElementById('repeatTHIS');
+
+    function repeat() {
+      var clone = original.cloneNode(true);
+      clone.id = "repeatTHIS" + ++i;
+      original.parentNode.appendChild(clone);
+    }
+</script>
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/js.cookie.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="js/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="js/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="js/datatable.js" type="text/javascript"></script>
+    <script src="js/datatables/datatables.min.js" type="text/javascript"></script>
+    <script src="js/datatables/datatables.bootstrap.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <script src="js/bootbox.min.js" type="text/javascript"></script>
+    <script src="js/auto_complete.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script src="js/custom-pentavalue.js" type="text/javascript"></script>
+    <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+
+</html>

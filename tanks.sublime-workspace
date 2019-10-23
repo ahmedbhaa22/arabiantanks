@@ -1,0 +1,777 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transformResultSet"
+			],
+			[
+				"que",
+				"questions"
+			],
+			[
+				"reset_",
+				"reset_password_token"
+			],
+			[
+				"sock",
+				"socket"
+			],
+			[
+				"user",
+				"userLocation"
+			],
+			[
+				"drie",
+				"driver"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"start",
+				"startInterval"
+			],
+			[
+				"conne",
+				"connectBtn"
+			],
+			[
+				"conn",
+				"connectBtn"
+			],
+			[
+				"dr",
+				"drivers"
+			],
+			[
+				"driv",
+				"driverLocation"
+			],
+			[
+				"loc",
+				"location"
+			],
+			[
+				"creat",
+				"createIndex"
+			],
+			[
+				"elastic",
+				"elasticsearch"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/CronController.php",
+			"settings":
+			{
+				"buffer_size": 5178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/controllers/ApiController.php",
+			"settings":
+			{
+				"buffer_size": 6860,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/PollsListTransformer.php",
+			"settings":
+			{
+				"buffer_size": 1645,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/PollsViewTransformer.php",
+			"settings":
+			{
+				"buffer_size": 456,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/AnswersTransformer.php",
+			"settings":
+			{
+				"buffer_size": 302,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n  \"status\": {\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"error_details\": []\n  },\n  \"content\": {\n    \"groups\": [\n      {\n        \"id\": \"30\",\n        \"name\": \"questions number one\",\n        \"field_type\": \"radio\",\n        \"chart_type\": \"pie-chart\",\n        \"answer\": [\n          {\n            \"id\": \"40\",\n            \"name\": \"answer one\",\n            \"image\": \"polls/uploads/ffc0ea3f5b13f94262ec90175e81e688\",\n            \"rate\": \"45\",\n            \"color\": \"\"\n          },\n          {\n            \"id\": \"41\",\n            \"name\": \"answer two\",\n            \"image\": \"polls/uploads/cc8c5a84d4ecb24749bf4e6cf96c8d81\",\n            \"rate\": \"55\",\n            \"color\": \"\"\n          }\n        ]\n      },\n      {\n        \"id\": \"31\",\n        \"name\": \"question number 2\",\n        \"field_type\": \"checkbox\",\n        \"chart_type\": \"pie-chart\",\n        \"answer\": [\n          {\n            \"id\": \"42\",\n            \"name\": \"answer one\",\n            \"image\": \"polls/uploads/01ac8c62e92d4ed61b688b88dd6ffdfd\",\n            \"rate\": \"80\",\n            \"color\": \"\"\n          },\n          {\n            \"id\": \"43\",\n            \"name\": \"answer two\",\n            \"image\": \"polls/uploads/ed57d79b599df6c0ae35833567a8e782\",\n            \"rate\": \"20\",\n            \"color\": \"\"\n          }\n        ]\n      }\n    ]\n  }\n}",
+			"settings":
+			{
+				"buffer_size": 1289,
+				"line_ending": "Unix",
+				"name": "{"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/Polls.php",
+			"settings":
+			{
+				"buffer_size": 1851,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/Questions.php",
+			"settings":
+			{
+				"buffer_size": 2496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/QuestionsTransformer.php",
+			"settings":
+			{
+				"buffer_size": 915,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/modules/polls/models/Answers.php",
+			"settings":
+			{
+				"buffer_size": 1715,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/library/ApiFactory.php",
+			"settings":
+			{
+				"buffer_size": 58372,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 513.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/tanks",
+		"/var/www/html/tanks/app",
+		"/var/www/html/tanks/app/config",
+		"/var/www/html/tanks/app/modules",
+		"/var/www/html/tanks/app/modules/polls",
+		"/var/www/html/tanks/app/modules/polls/controllers",
+		"/var/www/html/tanks/app/modules/polls/models",
+		"/var/www/html/tanks/app/modules/polls/views"
+	],
+	"file_history":
+	[
+		"/var/www/html/tanks/app/library/Transformer.php",
+		"/var/www/html/tanks/app/modules/messages/controllers/ApiController.php",
+		"/var/www/html/tanks/app/models/DataMessages/MessagesRelation.php",
+		"/var/www/html/tanks/app/modules/messages/models/MessagesRelation.php",
+		"/var/www/html/tanks/app/modules/messages/controllers/ApiControllerBase.php",
+		"/var/www/html/tanks/app/config/routes.php",
+		"/var/www/html/tanks/public/index.php",
+		"/var/www/html/tanks/app/modules/polls/controllers/ApiController.php",
+		"/var/www/html/tanks/app/modules/notifications/tasks/SendTask.php",
+		"/var/www/html/tanks/app/modules/notifications/tasks/QueueTask.php",
+		"/var/www/html/tanks/app/modules/notifications/models/User.php",
+		"/var/www/html/tanks/app/models/Users.php",
+		"/var/www/html/tanks/app/controllers/CronController.php",
+		"/var/www/html/tanks/app/modules/messages/controllers/AjaxController.php",
+		"/var/www/html/tanks/app/modules/notifications/models/UsersFollow.php",
+		"/var/www/html/tanks/app/library/ApiFactory.php",
+		"/var/www/html/tanks/app/modules/polls/models/PollsTransformer.php",
+		"/var/www/html/medawy/app/modules/medawy/models/MedicationsTransformer.php",
+		"/var/www/html/medawy/app/modules/medawy/models/UsersMedicines.php",
+		"/var/www/html/medawy/app/controllers/SessionController.php",
+		"/var/www/html/medawy/app/modules/medawy/views/brands/edit.volt",
+		"/var/www/html/medawy/app/views/emailTemplates/forgetPassword.volt",
+		"/var/www/html/medawy/app/modules/medawy/views/emailTemplates/forgetPassword.volt",
+		"/var/www/html/medawy/app/modules/medawy/services/MailService.php",
+		"/var/www/html/medawy/app/modules/medawy/controllers/ApiController.php",
+		"/var/www/html/medawy/app/modules/medawy/views/brands/create.volt",
+		"/home/sherif/work/projects/ymam-socket/driver.html",
+		"/home/sherif/work/projects/ymam-socket/services/elasticService.js",
+		"/home/sherif/work/projects/ymam-socket/index.html",
+		"/home/sherif/work/projects/ymam-socket/app.js",
+		"/home/sherif/work/projects/ymam-socket/package-lock.json"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$q",
+			"visit_num",
+			"\":",
+			"{",
+			"\":",
+			"sender",
+			"from",
+			"20205",
+			"$this->user",
+			"polls",
+			"messa",
+			"polls",
+			"session",
+			"$user = $this->auth->getIdentity();",
+			"session",
+			"reset->",
+			"Server: Client ",
+			"long",
+			"lat",
+			"left",
+			"long",
+			"chat_input",
+			"lat",
+			"elasticsearch",
+			"lat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/CronController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/modules/polls/controllers/ApiController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5468,
+								5468
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1782.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/modules/polls/models/PollsListTransformer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/modules/polls/models/PollsViewTransformer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/modules/polls/models/AnswersTransformer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"default_dir": "/var/www/html/tanks",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/modules/polls/models/Polls.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/modules/polls/models/Questions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1660,
+								1660
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/modules/polls/models/QuestionsTransformer.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/modules/polls/models/Answers.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/library/ApiFactory.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6913,
+								6913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3290.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tanks.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"poll",
+				"app/modules/polls/models/Polls.php"
+			],
+			[
+				"trans",
+				"app/library/Transformer.php"
+			],
+			[
+				"cron",
+				"app/controllers/CronController.php"
+			],
+			[
+				"messrel",
+				"app/models/DataMessages/MessagesRelation.php"
+			],
+			[
+				"index",
+				"public/index.php"
+			],
+			[
+				"notifuser",
+				"app/modules/notifications/models/User.php"
+			],
+			[
+				"notiusers",
+				"app/modules/notifications/models/UsersFollow.php"
+			],
+			[
+				"user",
+				"app/models/Users.php"
+			],
+			[
+				"medictran",
+				"app/modules/medawy/models/MedicationsTransformer.php"
+			],
+			[
+				"usermed",
+				"app/modules/medawy/models/UsersMedicines.php"
+			],
+			[
+				"medaapi",
+				"app/modules/medawy/controllers/ApiController.php"
+			],
+			[
+				"session",
+				"app/controllers/SessionController.php"
+			],
+			[
+				"ind",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/html/medawy/medawy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
